@@ -25,17 +25,6 @@ exports.createArticle = async (req, res) => {
     recette: content,
     author: author,
   });
-  let article1 = new Article({
-    title: "Le nom de la recette",
-    recette: "recette",
-    author: "nom de l'utilisateur",
-  });
-  article1.save();
-  let user = new User({
-    name: "Le nom de la personne",
-    type: "belle",
-    size: "178cm",
-  });
   user.save();
   res.json(article);
 };

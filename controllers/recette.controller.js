@@ -23,16 +23,6 @@ exports.createRecette = async (req, res) => {
     content: content,
     author: author,
   });
-  let recette1 = new Recette({
-    nom: "Nom de la recette",
-    description: "description de la recette",
-  });
-  recette1.save();
-  let user = new User({
-    name: "Le nom de la personne",
-    email: "nom@hotmail.fr",
-    password: "motdepasse",
-  });
   user.save();
   res.json(recette);
 };
