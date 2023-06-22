@@ -1,9 +1,9 @@
-API Projet node
+# API Projet node
 
-Description
+## Description
 
 Partage de recettes
 
-Pour lancer le projet :
+## Pour lancer le projet :
 
 nodemon app.js
